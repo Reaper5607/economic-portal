@@ -61,4 +61,56 @@ a:hover {
   text-decoration: underline;
 }
 
+:root{
+  --accent: #0077cc;       /* change this to your brand color */
+  --nav-text: #222;
+  --nav-bg: transparent;
+  --nav-radius: 8px;
+}
+
+/* NAV */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.6rem 0;
+  background: var(--nav-bg);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.site-nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--nav-radius);
+  transition: background 160ms ease, color 160ms ease, transform 120ms ease;
+}
+
+.site-nav a:hover {
+  background: rgba(0,0,0,0.04);
+  transform: translateY(-1px);
+}
+
+/* Active page highlight */
+.site-nav a.active {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Mobile: stack links */
+@media (max-width: 640px) {
+  .site-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem 0;
+  }
+  .site-nav a {
+    display: block;
+    text-align: center;
+  }
+}
+
+
 
