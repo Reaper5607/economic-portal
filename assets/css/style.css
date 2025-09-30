@@ -1,1 +1,36 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+}
 
