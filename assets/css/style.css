@@ -34,3 +34,31 @@ footer {
   color: #888;
 }
 
+/* --- Existing styles here --- */
+
+/* --- New typography + layout styles --- */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: #333;
+  background: #fafafa;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+  color: #222;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
