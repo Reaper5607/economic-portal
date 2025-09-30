@@ -8,7 +8,13 @@
 </head>
 <body>
 
-  <!-- Site nav -->
+  <!-- Site Header -->
+  <header class="site-header">
+    <h1>{{ site.title }}</h1>
+    <p class="tagline">{{ site.description }}</p>
+  </header>
+
+  <!-- Navigation -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
     <a href="{{ '/about' | relative_url }}" class="{% if page.url contains '/about' %}active{% endif %}">About</a>
@@ -18,6 +24,11 @@
   <main>
     {{ content }}
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} Economic Portal · Built with 💙 on GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
