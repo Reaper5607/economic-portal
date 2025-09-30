@@ -13,5 +13,14 @@
     <footer>
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
-  </body>
+   <body>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a> |
+    <a href="{{ '/about' | relative_url }}">About</a> |
+    <a href="{{ '/contact' | relative_url }}">Contact</a>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
 </html>
