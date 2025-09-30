@@ -1,0 +1,17 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Econ Portal</h1>
+<p>Simple summaries of today’s biggest economic stories and what they mean</p>
+
+<h2>Daily Economics News</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span>({{ post.date | date: "%d %b %Y" }})</span>
+    </li>
+  {% endfor %}
+</ul>
