@@ -159,6 +159,110 @@ a:hover {
   margin: 0;
 }
 
+/* ===== Global Theme ===== */
+:root {
+  --accent: #0056b3;   /* brand color: professional deep blue */
+  --light-bg: #f1f5f9;
+  --text-dark: #222;
+  --text-light: #666;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+  background: var(--light-bg);
+  border-bottom: 1px solid #ddd;
+}
+.site-header h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 2rem;
+}
+.site-header .tagline {
+  margin: 0.3rem 0 0;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/* Navigation */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.8rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.site-nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  transition: background 160ms ease, color 160ms ease;
+}
+.site-nav a:hover {
+  background: rgba(0,0,0,0.04);
+}
+.site-nav a.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* Post Cards */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.post-card {
+  background: #fff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+.post-card h2 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.25rem;
+}
+.post-card h2 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.post-card h2 a:hover {
+  text-decoration: underline;
+}
+.post-date {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0 0 0.6rem 0;
+}
+.post-excerpt {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  border-top: 1px solid #e5e5e5;
+  margin-top: 2rem;
+}
+
+
 
 
 
