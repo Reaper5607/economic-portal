@@ -2,12 +2,13 @@
 layout: default
 ---
 
-<article class="post">
+<article>
   <h1>{{ page.title }}</h1>
-  <p><small>Published on {{ page.date | date: "%d %B %Y" }}</small></p>
-  <div class="post-content">
+  <p><em>Published on {{ page.date | date: "%d %B %Y" }}</em></p>
+
+  <div>
     {{ content }}
   </div>
+
   <p><a href="{{ '/' | relative_url }}">← Back to home</a></p>
 </article>
-
