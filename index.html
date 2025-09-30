@@ -15,7 +15,7 @@ title: Home
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
       {% endif %}
       {% if post.excerpt %}
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
       {% endif %}
     </article>
   {% endfor %}
