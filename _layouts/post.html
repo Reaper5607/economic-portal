@@ -5,10 +5,20 @@ layout: default
 <article>
   <h1>{{ page.title }}</h1>
   <p><em>Published on {{ page.date | date: "%d %B %Y" }}</em></p>
+  <hr>
 
-  <div>
+  <div class="post-content">
     {{ content }}
   </div>
 
-  <p><a href="{{ '/' | relative_url }}">← Back to home</a></p>
+  <hr>
+  {% if page.source %}
+    <p><strong>Source:</strong> {{ page.source }}</p>
+  {% endif %}
+  {% if page.original_url %}
+    <p><a href="{{ page.original_url }}" target="_blank">👉 Read the full article</a></p>
+  {% endif %}
+
+  <p><a href="{{ "/" | relative_url }}">← Back to home</a></p>
 </article>
+
