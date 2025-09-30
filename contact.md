@@ -8,4 +8,4 @@ title: "Contact"
 Have questions or suggestions?👀 Reach out here:
 
 - 📧 Email: yunkinonline@gmail.com  
-- 💼 GitHub: [Your GitHub Profile](https://github.com/Reaper5607)  
+- 💼 GitHub: [Reaper5607](https://github.com/Reaper5607)  
