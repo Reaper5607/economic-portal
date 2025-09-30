@@ -1,0 +1,20 @@
+title: Econ Portal
+description: Simple summaries of today’s biggest economic stories and what they mean
+baseurl: "" # leave empty unless deploying under a subpath
+url: "https://reaper5607.github.io" # change if you use a custom domain
+
+# Theme (GitHub Pages supports minima by default)
+theme: minima
+
+# Build settings
+markdown: kramdown
+timezone: Europe/London
+
+# Optional defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Reaper5607
