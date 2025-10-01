@@ -6,6 +6,8 @@ url: "https://reaper5607.github.io" # change if you use a custom domain
 # Theme (GitHub Pages supports minima by default)
 theme: minima
 
+future: true
+
 # Build settings
 markdown: kramdown
 timezone: Europe/London
