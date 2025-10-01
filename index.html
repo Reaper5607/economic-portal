@@ -24,11 +24,12 @@ title: Home
 <script>
   async function updateCounter() {
     try {
-      const res = await fetch(
-        'https://api.countapi.xyz/hit/reaper5607.github.io/economic-portal/visits',
-        { cache: 'no-store' } // prevent caching
-      );
+      const url = 'https://api.countapi.xyz/hit/reaper5607-economic-portal/visits';
+      console.log("Fetching counter from:", url);
+      const res = await fetch(url, { cache: 'no-store' });
+      console.log("Response status:", res.status);
       const data = await res.json();
+      console.log("Counter data:", data);
       document.getElementById('visits').textContent = data.value;
     } catch (e) {
       console.error('Counter error:', e);
@@ -37,5 +38,6 @@ title: Home
   }
   updateCounter();
 </script>
+
 
 
