@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The murky economics of the data-centre investment boom"
-date: 2025-10-01 12:00:00 +0000
+date: 2025-10-01 10:00:00 +0000
 source: "The Economist"
 original_url: "https://www.economist.com/business/2025/09/30/the-murky-economics-of-the-data-centre-investment-boom"
 ---
