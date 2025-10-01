@@ -1,6 +1,6 @@
 title: Econ Portal
 description: Simple summaries of today’s biggest economic stories and what they mean
-baseurl: "" # leave empty unless deploying under a subpath
+baseurl: "/economic-portal" # leave empty unless deploying under a subpath
 url: "https://reaper5607.github.io" # change if you use a custom domain
 
 # Theme (GitHub Pages supports minima by default)
