@@ -20,3 +20,33 @@ title: Home
     </article>
   {% endfor %}
 </div>
+
+<!-- Visitor counter in bottom-right corner -->
+<div id="counter-box">
+  👀 Total Views: <span id="visits"></span>
+</div>
+
+<script>
+  async function updateCounter() {
+    const res = await fetch('https://api.countapi.xyz/hit/reaper5607.github.io/economic-portal/visits');
+    const data = await res.json();
+    document.getElementById('visits').innerText = data.value;
+  }
+  updateCounter();
+</script>
+
+<style>
+  #counter-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+  }
+</style>
+
