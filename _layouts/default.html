@@ -5,12 +5,12 @@
       <img class="brand-logo" src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }} logo">
       <span class="brand-text">{{ site.title }}</span>
     </a>
+     <nav class="main-nav">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about' | relative_url }}">About</a>
+  <a href="{{ '/contact' | relative_url }}">Contact</a>
+</nav>
 
-    <nav class="main-nav">
-      <a href="{{ '/' | append: site.baseurl }}">Home</a>
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/contact' | relative_url }}">Contact</a>
-    </nav>
   </div>
 </header>
 
