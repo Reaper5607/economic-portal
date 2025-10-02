@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Why credit markets are looking increasingly dangerous"
