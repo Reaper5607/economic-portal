@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nigel Farage urges Bank of England boss to stop bond sales"
-date: 2025-10-03 10:00:00 +0000
+date: 2025-10-03 06:00:00 +0000
 source: "BBC News"
 original_url: "https://www.bbc.co.uk/news/articles/c3vz1q5k62eo"
 ---
